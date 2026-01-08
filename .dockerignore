@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+build
+dist
+.env
+.env.local
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+cloudbuild.yaml
+yarn.lock
+package-lock.json
+npm-debug.log
