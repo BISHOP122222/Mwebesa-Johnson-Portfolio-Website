@@ -808,15 +808,15 @@ export const TESTIMONIALS = [
         role: "Proprietor",
         institution: "Muko Supermarket, Hima",
         content: "Mwebesa provides the best graphic designs for our supermarket. His attention to detail and ability to capture our brand message in posters is exceptional.",
-        avatar: null,
-        phone: "+256 760 732143"
+        avatar: "/Mukora Collins.jpeg",
+        phone: "+256 702 194065"
     },
     {
         name: "Jupiter",
         role: "Manager",
         institution: "Niam Stationers, Nasser Road",
         content: "Highly impressed with the quality of graphic design work. He delivered premium branding materials that stand out on Nasser Road's competitive market.",
-        avatar: null,
+        avatar: "/Jupiter.jpeg",
         phone: "+256 778 648487"
     },
     {
@@ -824,7 +824,8 @@ export const TESTIMONIALS = [
         role: "Owner",
         institution: "One Love Gamers",
         content: "Mwebesa's design for our One Love Gamers poster was exceptional. He captured the high-energy, vibrant atmosphere of our gaming community perfectly. We saw an immediate uptick in walk-ins after displaying his work. Truly a pro!",
-        avatar: null
+        avatar: "/Dave.jpeg",
+        phone: "+256 706 037727"
     }
 ]
 

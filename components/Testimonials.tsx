@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Star, Quote, Users, Award, TrendingUp, Heart } from 'lucide-react'
 import { TESTIMONIALS } from '@/lib/data'
 
@@ -66,8 +67,17 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-4 border-t border-gray-100 dark:border-gray-700 pt-6">
-                <div className="w-12 h-12 bg-primary-blue/10 rounded-full flex items-center justify-center text-primary-blue font-bold text-lg">
-                  {testimonial.name[0]}
+                <div className="w-12 h-12 relative overflow-hidden bg-primary-blue/10 rounded-full flex items-center justify-center text-primary-blue font-bold text-lg">
+                  {testimonial.avatar ? (
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    testimonial.name[0]
+                  )}
                 </div>
                 <div>
                   <div className="font-bold text-gray-900 dark:text-white">
