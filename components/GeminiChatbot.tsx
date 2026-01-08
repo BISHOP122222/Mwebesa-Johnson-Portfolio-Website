@@ -17,10 +17,30 @@ export default function GeminiChatbot() {
     const [input, setInput] = useState('')
     const [isLoading, setIsLoading] = useState(false)
     const messagesEndRef = useRef<HTMLDivElement>(null)
+    const chatbotRef = useRef<HTMLDivElement>(null)
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
+
+    // Handle click outside to close
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (chatbotRef.current && !chatbotRef.current.contains(event.target as Node)) {
+                setIsOpen(false)
+            }
+        }
+
+        if (isOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [isOpen])
 
     useEffect(() => {
         scrollToBottom()
@@ -98,8 +118,11 @@ export default function GeminiChatbot() {
             <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-32 right-8 z-40 bg-gradient-to-r from-primary-blue to-primary-purple text-white p-4 rounded-full shadow-2xl flex items-center justify-center"
+                onClick={(e) => {
+                    e.stopPropagation()
+                    setIsOpen(!isOpen)
+                }}
+                className="fixed bottom-32 right-8 z-60 bg-gradient-to-r from-primary-blue to-primary-purple text-white p-4 rounded-full shadow-2xl flex items-center justify-center"
             >
                 {isOpen ? <X className="w-6 h-6" /> : <Bot className="w-6 h-6" />}
             </motion.button>
@@ -108,10 +131,11 @@ export default function GeminiChatbot() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
+                        ref={chatbotRef}
                         initial={{ opacity: 0, y: 50, scale: 0.9 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
-                        className="fixed bottom-32 right-8 z-40 w-[400px] md:w-[480px] h-[600px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-100 dark:border-gray-700 max-h-[calc(100vh-160px)]"
+                        className="fixed bottom-32 right-8 z-60 w-[400px] md:w-[480px] h-[600px] bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-100 dark:border-gray-700 max-h-[calc(100vh-160px)]"
                     >
                         {/* Header */}
                         <div className="bg-gradient-to-r from-primary-blue to-primary-purple p-4 flex items-center justify-between">
