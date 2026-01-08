@@ -64,9 +64,9 @@ export default function Home() {
         <main>
           <Hero />
           <TechStack />
-          <Services />
           <Portfolio />
           <Systems />
+          <Services />
           <GraphicDesign />
           <ResearchProjects />
           <Workflow />
