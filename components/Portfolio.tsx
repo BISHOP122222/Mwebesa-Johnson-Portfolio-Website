@@ -28,7 +28,7 @@ export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('All')
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
-  const filters = ['All', 'NGOs', 'Business', 'Portfolios']
+  const filters = ['All', 'NGOs', 'Business', 'Schools', 'Portfolios']
   const projects = WEBSITE_PROJECTS
 
   const filteredProjects = activeFilter === 'All'

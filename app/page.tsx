@@ -19,6 +19,7 @@ import GraphicDesign from '@/components/GraphicDesign'
 import ResearchProjects from '@/components/ResearchProjects'
 import FAQ from '@/components/FAQ'
 import WhatsAppCTA from '@/components/WhatsAppCTA'
+import Partners from '@/components/Partners'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -63,6 +64,7 @@ export default function Home() {
         <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <main>
           <Hero />
+          <Partners />
           <TechStack />
           <Portfolio />
           <Systems />

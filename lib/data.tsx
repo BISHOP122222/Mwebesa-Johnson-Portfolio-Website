@@ -51,6 +51,13 @@ export const ABOUT_DATA = {
             icon: Zap
         },
         {
+            year: '2024 - Present',
+            title: 'Digital Solutions for Education',
+            description: 'Engineering specialized platforms for primary schools and NGOs to improve institutional transparency and community outreach.',
+            projects: ['Junior Angels Model School', 'Heritage Nexus System'],
+            icon: BookOpen
+        },
+        {
             year: '2024',
             title: 'Stock Taker | Hima Cement',
             description: 'Managed inventory referencing and troubleshooting, ensuring accurate stock counts during seasonal operations.',
@@ -529,6 +536,41 @@ export const SYSTEMS_DATA = [
             author: "Kasozi Brian",
             role: "Head of Science Faculty, UMU"
         },
+    },
+    {
+        id: 5,
+        title: 'Heritage Nexus System',
+        description: 'A high-fidelity genealogy and cultural preservation platform designed to help families stay connected and preserve their ancestral history.',
+        longDescription: 'Heritage Nexus is a comprehensive lineage management system that integrates family tree visualization with cultural documentation. It allows users to track their clans, plan family reunions, and use an AI-powered cultural chatbot for genealogical guidance.',
+        problemStatement: 'Families often lose touch with their roots and historical lineage due to decentralized oral traditions and lack of digital preservation tools.',
+        solution: 'Developed a robust platform that combines interactive family tree mapping with a secure memory vault and AI-driven ancestral storytelling.',
+        architecture: [
+            'Frontend: Next.js with Glassmorphism UI',
+            'Backend: Node.js (Express) and PostgreSQL',
+            'AI: Gemini API for cultural encyclopedia chatbot',
+            'Graph Logic: Custom node-based lineage rendering'
+        ],
+        challenges: [
+            'Mapping complex, non-linear family connections (spouses, multiple branches).',
+            'Optimizing real-time chatbot responses for cultural queries.',
+            'Ensuring high data security for sensitive family histories.'
+        ],
+        image: '/attachments/screenshots/my projects/Heritage Nexus System.png',
+        alt: 'Heritage Nexus System - Genealogy and Family Tree platform Uganda',
+        tech: ['Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'AI Chatbot'],
+        features: [
+            'Interactive Family Tree Mapping',
+            'Tribes & Clans Database',
+            'AI-Powered Cultural Chatbot',
+            'Memory Vault for Photos & Media',
+            'Event & Reunion Planning',
+            'Detailed Lineage Reporting'
+        ],
+        impact: 'Enabled 100+ users to successfully map their ancestral lineages and preserve cultural heritage.',
+        githubLink: 'https://github.com/BISHOP122222',
+        liveLink: null,
+        videoUrl: null,
+        category: 'System'
     }
 ]
 
@@ -668,6 +710,23 @@ export const WEBSITE_PROJECTS = [
         features: ['Dynamic Animations', 'SEO Optimization', 'Responsive Design', 'Interactive Modals'],
         impact: 'Established a strong personal brand and attracted international leads.',
         videoUrl: null
+    },
+    {
+        id: 11,
+        title: 'Junior Angels Model School',
+        category: 'Schools',
+        description: 'A welcoming digital home for a leading primary school in Hima, Kasese, designed to showcase academic excellence and community impact.',
+        image: '/attachments/screenshots/my projects/jams.png',
+        alt: 'Professional primary school website development Hima Kasese - Junior Angels Model School',
+        tech: ['WordPress', 'PHP', 'Custom Design'],
+        liveLink: 'https://juniorangelsmodelschool.com/',
+        githubLink: null,
+        features: ['Academic Excellence Reports', 'Community Engagement Blogs', 'Student Achievement Galleries', 'Parent Communication Portal'],
+        impact: 'Enhanced school visibility and improved parent-teacher communication digital channels.',
+        problemStatement: 'The school lacked an online presence to share its 100% PLE success rate and vibrant campus life with the Hima community.',
+        solution: 'Created a high-fidelity, responsive website that prioritizes storytelling through pupil success stories and campus news.',
+        architecture: ['WordPress CMS', 'Custom Academic Theme', 'Responsive Grid Layout'],
+        videoUrl: null
     }
 ]
 
@@ -716,7 +775,50 @@ export const GRAPHIC_DESIGN_PROJECTS = [
         tech: ['Adobe Photoshop', 'Digital Marketing'],
         features: ['Brand Focused Colors', 'Dynamic Layout', 'Print Ready'],
         impact: 'Directly increased engagement and walk-ins for the gaming center.'
+    },
+    {
+        id: 207,
+        title: 'Mobile Money Services Poster',
+        description: 'Clean, high-impact promotional poster for local Mobile Money agent services in Mukasa Room 33, focusing on readability and brand trust.',
+        image: '/attachments/graphic design projects/Mobile Money Services Poster.jpg',
+        tech: ['Adobe Photoshop', 'Branding'],
+        features: ['Service Highlighting', 'Contact Visibility', 'Professional Layout'],
+        impact: 'Improved business visibility for local financial services.'
+    },
+    {
+        id: 208,
+        title: 'Niam Stationers Valentine Invitation',
+        description: 'A warm, elegant Valentine\'s Day promotion for Niam Stationers, featuring rich red accents and premium typographic hierarchy.',
+        image: '/attachments/graphic design projects/Niam Stationers Valentine Invitation.png',
+        tech: ['Adobe Photoshop', 'Visual Identity'],
+        features: ['Typography', 'Color Harmony', 'Thematic Storytelling'],
+        impact: 'Increased seasonal foot traffic and customer engagement.'
+    },
+    {
+        id: 209,
+        title: 'Mutebwa Charles Campaign',
+        description: 'Academic election campaign collateral for Science Faculty Representative at Uganda Martyrs University, emphasizing vision and action.',
+        image: '/attachments/graphic design projects/Mutebwa Charles Campaign.jpg',
+        tech: ['Adobe Photoshop', 'Campaign Strategy'],
+        features: ['Professional Portraits', 'Bullet-point Vision Items', 'Institutional Branding'],
+        impact: 'Strong visual presence during campus-wide elections.'
+    },
+    {
+        id: 210,
+        title: 'Isingoma Peace Wilfred Declaration',
+        description: 'Intent declaration poster for Onyango Hall Representative, focusing on integrity, unity, and a rebranded respected association.',
+        image: '/attachments/graphic design projects/Isingoma Peace Wilfred Declaration.jpg',
+        tech: ['Adobe Photoshop', 'Political Branding'],
+        features: ['Vision Statement', 'Call to Action', 'Professional Identity'],
+        impact: 'Clear communication of candidate value proposition.'
     }
+]
+
+export const PARTNERS_LOGOS = [
+    { name: 'Webbuild System', logo: '/attachments/Partners/Webbuild Systems.png' },
+    { name: 'Niam Stationers', logo: '/attachments/Partners/Niam stationers.png' },
+    { name: 'Uganda Martyrs University', logo: '/attachments/Partners/Uganda Martyrs University.png' },
+    { name: 'Junior Angels Model School', logo: '/attachments/Partners/Muko Supermarket.jpg' } // Using Muko as a temporary school/partner fill or placeholder if JAMS is missing
 ]
 
 // --- SKILLS / WORKFLOW DATA ---
@@ -885,7 +987,7 @@ export const RESEARCH_PROJECTS = {
 }
 
 export const STATS = [
-    { label: 'Successful Projects', value: '15+', icon: Zap },
+    { label: 'Successful Projects', value: '30+', icon: Zap },
     { label: 'Happy Clients', value: '10+', icon: Users },
     { label: 'Years Experience', value: '3+', icon: Briefcase },
     { label: 'Technical Skills', value: '25+', icon: Target }
