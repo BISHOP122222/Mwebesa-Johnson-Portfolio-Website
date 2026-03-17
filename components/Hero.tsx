@@ -42,10 +42,10 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 font-montserrat">
-                Elite Digital Ecosystems & High-Performance Systems
+                Software Systems & AI-Driven Engineering in Practice
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold gradient-text mb-4">
-                Mwebesa Johnson — Scaling Impact Through Technical Excellence
+                Mwebesa Johnson — Bridging Theory & Technical Execution
               </h2>
             </motion.div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 font-opensans leading-relaxed"
             >
-              Building a high-impact digital presence shouldn't be an uphill battle. As a senior-track CS engineer and founder of Webbuild Systems, I combine technical precision with a deep focus on the East African landscape to deliver secure, scalable, and truly elite digital infrastructure for businesses and NGOs alike.
+              Mastering the digital landscape through dedicated practice. As a computer science student finalizing my undergraduate program and leading Webbuild Systems, I am actively practicing and refining my skills in AI-powered systems, machine learning, and NLP to deliver reliable software architecture for the East African market.
             </motion.p>
 
             <motion.div

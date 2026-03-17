@@ -716,7 +716,7 @@ export const WEBSITE_PROJECTS = [
         title: 'Junior Angels Model School',
         category: 'Schools',
         description: 'A welcoming digital home for a leading primary school in Hima, Kasese, designed to showcase academic excellence and community impact.',
-        image: '/attachments/screenshots/my projects/jams.png',
+        image: '/junior angels model school.png',
         alt: 'Professional primary school website development Hima Kasese - Junior Angels Model School',
         tech: ['WordPress', 'PHP', 'Custom Design'],
         liveLink: 'https://juniorangelsmodelschool.com/',

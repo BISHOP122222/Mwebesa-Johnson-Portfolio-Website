@@ -1,34 +1,35 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import StructuredData from './structured-data'
 
 export const metadata: Metadata = {
-  title: 'Premier Website & Systems Development in Uganda | 2026 Official',
-  description: 'Uganda’s leading digital solutions agency. We build professional websites, complex business systems, and AI-powered tools for NGOs and businesses across Kampala, Kasese, and all major Ugandan cities.',
-  keywords: 'best website developer uganda, software engineering kampala, uganda tech agency, mobile app development uganda, NGO systems east africa, business automation uganda, mwebesa johnson, webbuild systems, professional web design uganda, kasese tech solutions',
+  title: 'Mwebesa Johnson | Software Systems & AI Practitioner',
+  description: 'Portfolio of Mwebesa Johnson, a computer science student and lead at Webbuild Systems, building experience in AI-powered systems, machine learning, and technical infrastructure in Uganda.',
+  keywords: 'Software Systems Practice, AI Learning, Machine Learning Student Uganda, NLP Exploration, Webbuild Systems, Mwebesa Johnson Portfolio, Technical Development Practice, Professional Software Engineering',
   authors: [{ name: 'Mwebesa Johnson' }],
   creator: 'Mwebesa Johnson',
   publisher: 'Webbuild Systems Uganda',
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
-  metadataBase: new URL('https://webbuild-uganda.vercel.app'),
+  metadataBase: new URL('https://mwebesajohnson.xyz'),
   alternates: {
-    canonical: 'https://webbuild-uganda.vercel.app',
+    canonical: 'https://mwebesajohnson.xyz',
   },
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/me.jpg',
+    apple: '/me.jpg',
   },
   openGraph: {
-    title: 'Webbuild Systems Uganda | Leading Digital Solutions & Software Engineering',
-    description: 'Transforming businesses across Uganda with premium AI-powered systems, professional web design, and strategic digital infrastructure.',
-    url: 'https://webbuild-uganda.vercel.app',
-    siteName: 'Webbuild Systems Uganda',
+    title: 'Mwebesa Johnson | Software Systems & AI Development',
+    description: 'Practicing and mastering AI-powered systems, software engineering, and strategic digital infrastructure for the Ugandan landscape.',
+    url: 'https://mwebesajohnson.xyz',
+    siteName: 'Mwebesa Johnson Portfolio',
     images: [
       {
-        url: '/me.jpg',
+        url: '/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Mwebesa Johnson - Uganda Premier Software Developer',
+        alt: 'Mwebesa Johnson - Uganda Premier Software & AI Engineer',
       },
     ],
     locale: 'en_US',
@@ -36,18 +37,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Webbuild Systems Uganda | Uganda’s Leading Tech Agency',
-    description: 'Empowering Ugandan enterprises with elite software, AI-driven automation, and high-performance web solutions.',
-    images: ['/me.jpg'],
+    title: 'Mwebesa Johnson | Learning & Practicing AI Engineering',
+    description: 'Developing high-performance software systems and exploring AI-driven automation through dedicated technical practice.',
+    images: ['/logo.png'],
   },
   other: {
     'geo.region': 'UG',
     'geo.placename': 'Uganda',
     'geo.position': '1.3733;32.2903',
     'ICBM': '1.3733, 32.2903',
-    'DC.title': 'Webbuild Systems Uganda - National Software Excellence',
-    'DC.description': 'Top-tier software development and web design services for NGOs and businesses across the Republic of Uganda.',
-    'DC.subject': 'Software Development, Web Design, AI, Uganda, Kampala, Tech Agency',
+    'DC.title': 'Mwebesa Johnson - Dedicated Software & AI Practice',
+    'DC.description': 'Focusing on high-quality software development and AI systems for NGOs and businesses in Uganda through iterative practice.',
+    'DC.subject': 'Software Development, AI, Machine Learning, Uganda, Kampala, Tech Strategy',
     'DC.creator': 'Mwebesa Johnson',
     'DC.publisher': 'Webbuild Systems Uganda',
     'DC.coverage': 'Uganda, East Africa',
@@ -69,9 +70,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" href="/me.jpg" />
+        <link rel="apple-touch-icon" href="/me.jpg" />
         <StructuredData />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PP4ZYWM7N8"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PP4ZYWM7N8');
+          `}
+        </Script>
       </head>
       <body className="antialiased">
         {children}
