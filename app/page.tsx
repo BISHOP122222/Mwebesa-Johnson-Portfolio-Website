@@ -16,6 +16,7 @@ import Workflow from '@/components/Workflow'
 import Blog from '@/components/Blog'
 import Systems from '@/components/Systems'
 import GraphicDesign from '@/components/GraphicDesign'
+import MoodleLMS from '@/components/MoodleLMS'
 import ResearchProjects from '@/components/ResearchProjects'
 import FAQ from '@/components/FAQ'
 import WhatsAppCTA from '@/components/WhatsAppCTA'
@@ -69,6 +70,7 @@ export default function Home() {
           <Portfolio />
           <Systems />
           <Services />
+          <MoodleLMS />
           <GraphicDesign />
           <ResearchProjects />
           <Workflow />

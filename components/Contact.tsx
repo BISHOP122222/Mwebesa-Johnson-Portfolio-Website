@@ -44,7 +44,7 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/contact.php', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -93,7 +93,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '0780846138 / 074480667',
+      value: '0780846138 / 0744806676',
       link: 'tel:0780846138',
       color: 'text-primary-purple'
     },

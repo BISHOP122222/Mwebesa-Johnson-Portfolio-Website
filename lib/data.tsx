@@ -125,6 +125,18 @@ export const CERTIFICATES = [
         issuer: 'Cisco',
         file: '/attachments/certificates/Cisco_Certificate.pdf',
         icon: Shield
+    },
+    {
+        title: 'General Knowledge Test',
+        issuer: 'Mindticke',
+        file: '/attachments/certificates/MWEBESA JOHNSON_General Knowledge Test_Certificate.png',
+        icon: Award
+    },
+    {
+        title: 'AI Fundamentals with IBM SkillsBuild',
+        issuer: 'Cisco',
+        file: '/attachments/certificates/Your Future in AI_Resources to Explore_EN.pdf',
+        icon: Bot
     }
 ]
 
@@ -834,7 +846,7 @@ export const TECH_STACK = [
         title: "Backend & Database",
         icon: Database,
         color: "from-purple-500 to-indigo-500",
-        skills: ["Node.js", "PostgreSQL", "MongoDB", "Prisma", "REST APIs", "Firebase"]
+        skills: ["Node.js", "PostgreSQL", "MongoDB", "Prisma", "REST APIs", "Firebase", "Moodle LMS", "Plugin Development"]
     },
     {
         title: "AI & Innovation",
@@ -930,6 +942,50 @@ export const TESTIMONIALS = [
         phone: "+256 706 037727"
     }
 ]
+
+export const MOODLE_DATA = {
+  intro: "I am actively deepening my expertise in Moodle LMS by studying Uganda Martyrs University's production e-learning system — a full-scale Moodle deployment serving hundreds of students. I am applying these insights to build custom Moodle plugins that solve real institutional challenges.",
+  plugins: [
+    {
+      name: 'AI Chatbot Plugin',
+      status: 'In Development',
+      description: 'A smart Moodle plugin that integrates an AI-powered chatbot to assist students with course navigation, assignment queries, and instant FAQ responses directly inside the LMS.',
+      features: [
+        'Seamless Moodle block plugin integration',
+        'AI-driven responses for course content FAQs',
+        'Context-aware navigation assistance',
+        'Custom admin dashboard for conversation analytics',
+        'Multi-language support for diverse classrooms',
+      ],
+      tech: ['PHP', 'JavaScript', 'Moodle API', 'AJAX', 'MySQL'],
+    },
+    {
+      name: 'Attendance Plugin',
+      status: 'In Development',
+      description: 'A feature-rich attendance management plugin for Moodle that allows lecturers to mark, track, and report student attendance with automated analytics and real-time dashboards.',
+      features: [
+        'QR code & manual attendance marking',
+        'Real-time attendance dashboards for lecturers',
+        'Automated absence notifications to students',
+        'Export reports (PDF/CSV) for admin review',
+        'Integration with Moodle gradebook',
+      ],
+      tech: ['PHP', 'MySQL', 'JavaScript', 'Moodle API', 'Bootstrap'],
+    },
+  ],
+  learning: [
+    'Studying Uganda Martyrs University\'s production Moodle e-learning system architecture and workflows.',
+    'Learning from Iga Edward Grace (Head of IT, UMU) on institutional LMS deployment, scaling, and security best practices.',
+    'Exploring Moodle plugin development standards, database schema patterns, and event-driven hooks.',
+    'Building towards full Moodle LMS administration and custom theme development.',
+  ],
+  reference: {
+    name: 'Iga Edward Grace',
+    role: 'Head of IT Department',
+    institution: 'Uganda Martyrs University',
+    phone: '256782520087',
+  },
+}
 
 export const RESEARCH_PROJECTS = {
     hurdles: "These projects represent my early journey into software engineering. While many were not fully deployed due to technical limitations—such as lack of API funding, limited hardware resources (overheating PC), and testing device failures—they laid the foundation for my current expertise in architecture and problem-solving.",
